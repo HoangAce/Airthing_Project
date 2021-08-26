@@ -1,0 +1,3440 @@
+[
+    {
+        "id": "76b0044be5cec7fe",
+        "type": "tab",
+        "label": "Home",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b823e2ccd523cbc2",
+        "type": "tab",
+        "label": "Account",
+        "disabled": false,
+        "info": "\n"
+    },
+    {
+        "id": "5bda170c53f90053",
+        "type": "tab",
+        "label": "Chart",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "76f786813df1af69",
+        "type": "tab",
+        "label": "RealTime",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6347011a0b072a1c",
+        "type": "mqtt-broker",
+        "name": "airthing.ddns.net",
+        "broker": "airthing.ddns.net",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f7a36b4b62689129",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#ffffff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 60,
+                "gx": 6,
+                "gy": 40,
+                "cx": 6,
+                "cy": 6,
+                "px": 10,
+                "py": 40
+            }
+        }
+    },
+    {
+        "id": "abe382d43e0543cf",
+        "type": "postgreSQLConfig",
+        "name": "airthing.ddns.net",
+        "host": "airthing.ddns.net",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "postgres",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "min": "5",
+        "minFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "Duy@2292",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "3cdc7fb7d73f0971",
+        "type": "ui_group",
+        "name": "LogIn",
+        "tab": "48b0cbb490285a64",
+        "order": 1,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "579dfeedd0b05312",
+        "type": "ui_tab",
+        "z": "5bda170c53f90053",
+        "name": "Chart",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d256e72fba7df8c2",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "579dfeedd0b05312",
+        "order": 3,
+        "disp": false,
+        "width": 24,
+        "collapse": false
+    },
+    {
+        "id": "3fc1e9f631dbc648",
+        "type": "ui_group",
+        "name": "Information",
+        "tab": "1971cc00ef7934b6",
+        "order": 3,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "2c2ede04c4506fc7",
+        "type": "ui_group",
+        "name": "Register",
+        "tab": "48b0cbb490285a64",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "48b0cbb490285a64",
+        "type": "ui_tab",
+        "z": "76b0044be5cec7fe",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "69951a47e82a0712",
+        "type": "ui_group",
+        "name": "AddDevice",
+        "tab": "1971cc00ef7934b6",
+        "order": 4,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "1971cc00ef7934b6",
+        "type": "ui_tab",
+        "z": "b823e2ccd523cbc2",
+        "name": "Account",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e941c59603edab1d",
+        "type": "ui_group",
+        "name": "CreateRoomName",
+        "tab": "1971cc00ef7934b6",
+        "order": 3,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "f3009dbd89de3e8d",
+        "type": "ui_group",
+        "name": "Test",
+        "tab": "579dfeedd0b05312",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3b8d64b472cdb4ac",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "3fc1e9f631dbc648",
+        "order": 8,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "42c0a79fe888ff4c",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "e941c59603edab1d",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b4fd3c238d35644e",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "e941c59603edab1d",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f0f4399c0d53fb40",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "e941c59603edab1d",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9b74c1fc218674fb",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "e941c59603edab1d",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ccfdec37f1c19d81",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "69951a47e82a0712",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b4ba25aba6693bc4",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "69951a47e82a0712",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8dc1a1baf2bf9b7d",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "69951a47e82a0712",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6b620f6d3562a8d7",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "69951a47e82a0712",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3158e5b0ee638763",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "69951a47e82a0712",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9bd341c165dfa668",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "69951a47e82a0712",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "51fd7ac6eee1ad10",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "d256e72fba7df8c2",
+        "order": 1,
+        "width": 21,
+        "height": 1
+    },
+    {
+        "id": "da9825436064719c",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "d256e72fba7df8c2",
+        "order": 4,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "47167bf7641a0c5c",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "d256e72fba7df8c2",
+        "order": 11,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "fbd62f3ae684eac5",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "d256e72fba7df8c2",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "72a8b2dbe5b7eef0",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "d256e72fba7df8c2",
+        "order": 21,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "f3b8c3b7a1435e95",
+        "type": "ui_spacer",
+        "z": "5bda170c53f90053",
+        "name": "spacer",
+        "group": "d256e72fba7df8c2",
+        "order": 23,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "5e12d1aae2e45a1c",
+        "type": "ui_form",
+        "z": "76b0044be5cec7fe",
+        "name": "Table Log In",
+        "label": "Welcom back",
+        "group": "3cdc7fb7d73f0971",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "options": [
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "Login",
+        "cancel": "Clear",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "7a90fe586b9cfe76"
+            ]
+        ]
+    },
+    {
+        "id": "a0f4f170f79a3f28",
+        "type": "ui_text",
+        "z": "76b0044be5cec7fe",
+        "group": "3cdc7fb7d73f0971",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "Status LogIn",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1250,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4f0b73253e69b241",
+        "type": "ui_button",
+        "z": "76b0044be5cec7fe",
+        "name": "Button to Register Table",
+        "group": "3cdc7fb7d73f0971",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "passthru": false,
+        "label": "To register table",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "yes",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 320,
+        "wires": [
+            [
+                "862284a98b5a3994"
+            ]
+        ]
+    },
+    {
+        "id": "7a90fe586b9cfe76",
+        "type": "postgresql",
+        "z": "76b0044be5cec7fe",
+        "name": "Select Account_id Data",
+        "query": "SELECT account_id, email FROM accounts\nWHERE email = '{{{msg.payload.email}}}'\nAND password = '{{{msg.payload.password}}}';",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "5952f7bcf20bbd5e"
+            ]
+        ]
+    },
+    {
+        "id": "4ca8c911e3a2c0df",
+        "type": "trigger",
+        "z": "76b0044be5cec7fe",
+        "name": "Status display time",
+        "op1": "",
+        "op2": "  ",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "1000",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 990,
+        "y": 120,
+        "wires": [
+            [
+                "a0f4f170f79a3f28"
+            ]
+        ]
+    },
+    {
+        "id": "613aaf804d8b4ad6",
+        "type": "link out",
+        "z": "76b0044be5cec7fe",
+        "name": "From Flow 'Home', Table 'LogIn'",
+        "links": [
+            "3e446118833ac46c",
+            "61b4a270915fbb2f",
+            "a986ee586437f3f7",
+            "f182beebe028280c",
+            "6a0f0bc4ad8a5abc",
+            "5a99b892b1c13805",
+            "d264b960b8ebdae0",
+            "4ce60797c2eceae2"
+        ],
+        "x": 915,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4d31e9d26e82c661",
+        "type": "ui_form",
+        "z": "b823e2ccd523cbc2",
+        "name": "Table enter data Device_add",
+        "label": "Add Device",
+        "group": "69951a47e82a0712",
+        "order": 8,
+        "width": 10,
+        "height": 1,
+        "options": [
+            {
+                "label": "ID thiết bị",
+                "value": "device_id",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "device_id": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "addDevice",
+        "topicType": "str",
+        "splitLayout": "",
+        "x": 220,
+        "y": 620,
+        "wires": [
+            [
+                "32016edaf6ee15e9"
+            ]
+        ]
+    },
+    {
+        "id": "f98ffadb2bda6e66",
+        "type": "ui_text",
+        "z": "b823e2ccd523cbc2",
+        "group": "69951a47e82a0712",
+        "order": 5,
+        "width": 10,
+        "height": 1,
+        "name": "Status Add Device",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1750,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "32016edaf6ee15e9",
+        "type": "postgresql",
+        "z": "b823e2ccd523cbc2",
+        "name": "Select data Device_add",
+        "query": "SELECT device_id\nFROM device_management\nWHERE device_id = {{{msg.payload.device_id}}}\nAND password =  '{{{msg.payload.password}}}';",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 470,
+        "y": 620,
+        "wires": [
+            [
+                "57a10af08d2ce269"
+            ]
+        ]
+    },
+    {
+        "id": "267ae3de04472ceb",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Check status Device_add",
+        "func": "if(msg.payload[0].count > 0)\n{\n    text = {payload: \"This device is already registered.\\nPlease check the information !!!\"}\n    return [text, null]\n}\nelse \n{\n    msg.payload = {\"group\": {\"hide\": [\"Account_AddDevice\"], \"show\": [\"Account_CreateRoomName\"], \"focus\": true}}\n    return [null, msg]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 620,
+        "wires": [
+            [
+                "2876b26a82ffc89e"
+            ],
+            [
+                "59885e5f2fa83573",
+                "aecb82fd24bc4080"
+            ]
+        ]
+    },
+    {
+        "id": "6ee26df7eccc8438",
+        "type": "postgresql",
+        "z": "b823e2ccd523cbc2",
+        "name": "Insert&Update data device_active to database",
+        "query": "INSERT INTO device_active (device_id, account_id, title)\nVALUES ({{{ msg.device_id}}},{{{ msg.account_id}}},'{{{msg.title}}}');\nUPDATE device_management\nSET status = 'active'\nWHERE device_id = {{{ msg.device_id}}};",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ce5d01bd7937eaa",
+        "type": "comment",
+        "z": "76b0044be5cec7fe",
+        "name": "Processing program table Log In",
+        "info": "",
+        "x": 230,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ef1b9fca88c8b4ec",
+        "type": "ui_ui_control",
+        "z": "76b0044be5cec7fe",
+        "name": "To Register Table",
+        "events": "change",
+        "x": 790,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "862284a98b5a3994",
+        "type": "function",
+        "z": "76b0044be5cec7fe",
+        "name": "Control table display status Register",
+        "func": "msg.payload = {\"group\": {\"hide\": [\"Home_LogIn\"], \"show\": [\"Home_Register\"], \"focus\": true}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 320,
+        "wires": [
+            [
+                "ef1b9fca88c8b4ec"
+            ]
+        ]
+    },
+    {
+        "id": "5952f7bcf20bbd5e",
+        "type": "function",
+        "z": "76b0044be5cec7fe",
+        "name": "Check Account_id Log In",
+        "func": "if(msg.payload.length === 0)\n{\n    text = {payload :\"Incorrect account or password !!!\"}\n    return [text, null]\n}\nelse\n{\n    account_id = {\n        payload: {tab: \"Account\"},\n        account_id: msg.payload[0].account_id,\n        email: msg.payload[0].email,\n        topic: \"account\"\n    }\n    return [null, account_id]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "4ca8c911e3a2c0df"
+            ],
+            [
+                "613aaf804d8b4ad6",
+                "8388c7748ea7a751"
+            ]
+        ]
+    },
+    {
+        "id": "af093769fcf4e1bd",
+        "type": "ui_dropdown",
+        "z": "5bda170c53f90053",
+        "name": "Select Device",
+        "label": "Select Device",
+        "tooltip": "",
+        "place": "",
+        "group": "d256e72fba7df8c2",
+        "order": 3,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "device_id",
+        "topicType": "str",
+        "x": 900,
+        "y": 300,
+        "wires": [
+            [
+                "fc6d1c92190b6025"
+            ]
+        ]
+    },
+    {
+        "id": "0ec1b8f92e5e7108",
+        "type": "ui_text_input",
+        "z": "5bda170c53f90053",
+        "name": "Temperature",
+        "label": "Temperature",
+        "tooltip": "",
+        "group": "d256e72fba7df8c2",
+        "order": 15,
+        "width": 4,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "temp",
+        "topicType": "str",
+        "x": 910,
+        "y": 1080,
+        "wires": [
+            [
+                "0eb2c2e2eb13bf69"
+            ]
+        ]
+    },
+    {
+        "id": "8b7f7c4698849d60",
+        "type": "ui_text_input",
+        "z": "5bda170c53f90053",
+        "name": "Humidity",
+        "label": "Humidity",
+        "tooltip": "",
+        "group": "d256e72fba7df8c2",
+        "order": 16,
+        "width": 4,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "humidity",
+        "topicType": "str",
+        "x": 900,
+        "y": 1120,
+        "wires": [
+            [
+                "0eb2c2e2eb13bf69"
+            ]
+        ]
+    },
+    {
+        "id": "7ea53255d951a6a0",
+        "type": "ui_text_input",
+        "z": "5bda170c53f90053",
+        "name": "TVOC",
+        "label": "TVOC",
+        "tooltip": "ace",
+        "group": "d256e72fba7df8c2",
+        "order": 17,
+        "width": 4,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "VOC",
+        "topicType": "str",
+        "x": 890,
+        "y": 1160,
+        "wires": [
+            [
+                "0eb2c2e2eb13bf69"
+            ]
+        ]
+    },
+    {
+        "id": "2d2b6e808bc49698",
+        "type": "ui_text_input",
+        "z": "5bda170c53f90053",
+        "name": "CO2",
+        "label": "CO2",
+        "tooltip": "",
+        "group": "d256e72fba7df8c2",
+        "order": 18,
+        "width": 4,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "CO2",
+        "topicType": "str",
+        "x": 890,
+        "y": 1200,
+        "wires": [
+            [
+                "0eb2c2e2eb13bf69"
+            ]
+        ]
+    },
+    {
+        "id": "484bc0767fc839ba",
+        "type": "ui_text_input",
+        "z": "5bda170c53f90053",
+        "name": "PM10",
+        "label": "PM10",
+        "tooltip": "",
+        "group": "d256e72fba7df8c2",
+        "order": 19,
+        "width": 4,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "PM10",
+        "topicType": "str",
+        "x": 890,
+        "y": 1240,
+        "wires": [
+            [
+                "0eb2c2e2eb13bf69"
+            ]
+        ]
+    },
+    {
+        "id": "a789b08392c60a67",
+        "type": "ui_text_input",
+        "z": "5bda170c53f90053",
+        "name": "PM25",
+        "label": "PM2.5",
+        "tooltip": "",
+        "group": "d256e72fba7df8c2",
+        "order": 20,
+        "width": 4,
+        "height": 2,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "PM25",
+        "topicType": "str",
+        "x": 890,
+        "y": 1280,
+        "wires": [
+            [
+                "0eb2c2e2eb13bf69"
+            ]
+        ]
+    },
+    {
+        "id": "18908aadfbd956e6",
+        "type": "ui_button",
+        "z": "5bda170c53f90053",
+        "name": "Setup Alarm",
+        "group": "d256e72fba7df8c2",
+        "order": 12,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Setup Alarm",
+        "tooltip": "",
+        "color": "red",
+        "bgcolor": "white",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "setAlarm",
+        "topicType": "str",
+        "x": 910,
+        "y": 1320,
+        "wires": [
+            [
+                "0eb2c2e2eb13bf69"
+            ]
+        ]
+    },
+    {
+        "id": "f25cfa15a15692c0",
+        "type": "ui_button",
+        "z": "76b0044be5cec7fe",
+        "name": "Button to LogIn Table",
+        "group": "2c2ede04c4506fc7",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "passthru": false,
+        "label": "To login table",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "yes",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 680,
+        "wires": [
+            [
+                "df1b057bb28e5b92"
+            ]
+        ]
+    },
+    {
+        "id": "f86a6c846e1eca5b",
+        "type": "ui_form",
+        "z": "76b0044be5cec7fe",
+        "name": "Table Register",
+        "label": "Create Account",
+        "group": "2c2ede04c4506fc7",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "options": [
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Comfirm Password",
+                "value": "confirmPassword",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": "",
+            "password": "",
+            "confirmPassword": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 180,
+        "y": 560,
+        "wires": [
+            [
+                "3589dd744d55b119"
+            ]
+        ]
+    },
+    {
+        "id": "7c0709341ad27694",
+        "type": "ui_text",
+        "z": "76b0044be5cec7fe",
+        "group": "2c2ede04c4506fc7",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "Status Register",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1420,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a6af446ad95deb1c",
+        "type": "trigger",
+        "z": "76b0044be5cec7fe",
+        "name": "Status display time",
+        "op1": "",
+        "op2": " ",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "2",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1170,
+        "y": 560,
+        "wires": [
+            [
+                "7c0709341ad27694"
+            ]
+        ]
+    },
+    {
+        "id": "145f98efa3a4010c",
+        "type": "postgresql",
+        "z": "76b0044be5cec7fe",
+        "name": "Select Accounts Data",
+        "query": "SELECT email FROM accounts\nWHERE email = '{{{msg.email}}}'",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 640,
+        "y": 520,
+        "wires": [
+            [
+                "260c6f551437c8c8"
+            ]
+        ]
+    },
+    {
+        "id": "3589dd744d55b119",
+        "type": "function",
+        "z": "76b0044be5cec7fe",
+        "name": "Check Password",
+        "func": "if(msg.payload.password !== msg.payload.confirmPassword)\n{\n    text = {payload: \"Mật khẩu không khớp !!!\"}\n    return [null, text]\n}\nelse \n{\n    msg = { email: msg.payload.email, password: msg.payload.password }\n    return [msg, null];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 560,
+        "wires": [
+            [
+                "145f98efa3a4010c"
+            ],
+            [
+                "a6af446ad95deb1c"
+            ]
+        ]
+    },
+    {
+        "id": "260c6f551437c8c8",
+        "type": "function",
+        "z": "76b0044be5cec7fe",
+        "name": "Check Account Register",
+        "func": "if(msg.payload.length > 0)\n{\n    text = {payload: \"Account already exists !!!\"}\n    return [null, text]\n}\nelse \n{\n    text = {payload: \"Sign Up Success !!!\"}\n    return [msg, text];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 520,
+        "wires": [
+            [
+                "158cd6c4cefa2d0e"
+            ],
+            [
+                "a6af446ad95deb1c"
+            ]
+        ]
+    },
+    {
+        "id": "158cd6c4cefa2d0e",
+        "type": "postgresql",
+        "z": "76b0044be5cec7fe",
+        "name": "Insert account To database",
+        "query": "INSERT INTO accounts (email, password)\n    VALUES ('{{{ msg.email}}}','{{{ msg.password}}}');",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1180,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27e190a01b795030",
+        "type": "ui_ui_control",
+        "z": "76b0044be5cec7fe",
+        "name": "To LogIn Table",
+        "events": "change",
+        "x": 820,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df1b057bb28e5b92",
+        "type": "function",
+        "z": "76b0044be5cec7fe",
+        "name": "Control table display status Login",
+        "func": "msg.payload = {\"group\": {\"hide\": [\"Home_Register\"], \"show\": [\"Home_LogIn\"], \"focus\": true}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 680,
+        "wires": [
+            [
+                "27e190a01b795030"
+            ]
+        ]
+    },
+    {
+        "id": "9180ca7a9d16aef0",
+        "type": "comment",
+        "z": "76b0044be5cec7fe",
+        "name": "Processing program table Register",
+        "info": "",
+        "x": 240,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8388c7748ea7a751",
+        "type": "ui_ui_control",
+        "z": "76b0044be5cec7fe",
+        "name": "To flow Account",
+        "events": "all",
+        "x": 980,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a6ce69f4095c592",
+        "type": "ui_form",
+        "z": "b823e2ccd523cbc2",
+        "name": "Table create Room_name",
+        "label": "Create Room",
+        "group": "e941c59603edab1d",
+        "order": 5,
+        "width": 10,
+        "height": 1,
+        "options": [
+            {
+                "label": "Mời nhập tên phòng",
+                "value": "title",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "title": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "roomName",
+        "topicType": "str",
+        "splitLayout": "",
+        "x": 230,
+        "y": 940,
+        "wires": [
+            [
+                "401509fb0f47e4cc"
+            ]
+        ]
+    },
+    {
+        "id": "aecb82fd24bc4080",
+        "type": "ui_ui_control",
+        "z": "b823e2ccd523cbc2",
+        "name": "To CreateRoomName Table",
+        "events": "change",
+        "x": 1560,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15e517c3e06af114",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Return complete status",
+        "func": "if(msg.topic === 'back')\n{\n    text = {payload : \"Please re-enter device information !!!\"}\n}\nelse\n{\n    text = {payload : \"Add device successfully !!!\"}\n}\nmsg.payload = {\"group\": {\"hide\": [\"Account_CreateRoomName\"], \"show\": [\"Account_AddDevice\"], \"focus\": true}}\nreturn [text, msg]\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 940,
+        "wires": [
+            [
+                "77e5bab7d4a6dec5"
+            ],
+            [
+                "02ca61c945736b2c"
+            ]
+        ]
+    },
+    {
+        "id": "02ca61c945736b2c",
+        "type": "ui_ui_control",
+        "z": "b823e2ccd523cbc2",
+        "name": "Show Device_add Table",
+        "events": "change",
+        "x": 1210,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2876b26a82ffc89e",
+        "type": "trigger",
+        "z": "b823e2ccd523cbc2",
+        "name": "Status display time",
+        "op1": "",
+        "op2": "  ",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "2000",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1510,
+        "y": 560,
+        "wires": [
+            [
+                "f98ffadb2bda6e66"
+            ]
+        ]
+    },
+    {
+        "id": "401509fb0f47e4cc",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Get data of device_add",
+        "func": "if(msg.topic === \"AddDevice\")\n{\n    account_id = msg.account_id\n    device_id = msg.device_id\n}\nelse\n{\n    msg.account_id = account_id\n    msg.device_id = device_id\n    msg.title = msg.payload.title\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 940,
+        "wires": [
+            [
+                "6ee26df7eccc8438",
+                "15e517c3e06af114"
+            ]
+        ]
+    },
+    {
+        "id": "59885e5f2fa83573",
+        "type": "link out",
+        "z": "b823e2ccd523cbc2",
+        "name": "From Table 'Device_add'",
+        "links": [
+            "89e4bb5c12ca787b",
+            "5a99b892b1c13805",
+            "d264b960b8ebdae0",
+            "4ce60797c2eceae2"
+        ],
+        "x": 1435,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "89e4bb5c12ca787b",
+        "type": "link in",
+        "z": "b823e2ccd523cbc2",
+        "name": "To Table 'Device_add'",
+        "links": [
+            "59885e5f2fa83573"
+        ],
+        "x": 315,
+        "y": 880,
+        "wires": [
+            [
+                "401509fb0f47e4cc"
+            ]
+        ]
+    },
+    {
+        "id": "5c94d79f2e1cd5e9",
+        "type": "link in",
+        "z": "b823e2ccd523cbc2",
+        "name": "To Table 'Device_add', status",
+        "links": [
+            "77e5bab7d4a6dec5",
+            "8b18ca413f45dbf3"
+        ],
+        "x": 1335,
+        "y": 520,
+        "wires": [
+            [
+                "2876b26a82ffc89e"
+            ]
+        ]
+    },
+    {
+        "id": "77e5bab7d4a6dec5",
+        "type": "link out",
+        "z": "b823e2ccd523cbc2",
+        "name": "From Table 'Create Room_name', status 'Complete'",
+        "links": [
+            "5c94d79f2e1cd5e9",
+            "5a99b892b1c13805",
+            "d264b960b8ebdae0",
+            "4ce60797c2eceae2"
+        ],
+        "x": 1115,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d8835d2776d7fd55",
+        "type": "ui_button",
+        "z": "b823e2ccd523cbc2",
+        "name": "Back to table enter data Device_add",
+        "group": "e941c59603edab1d",
+        "order": 2,
+        "width": 10,
+        "height": 1,
+        "passthru": false,
+        "label": "Back",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "back",
+        "topicType": "str",
+        "x": 610,
+        "y": 1000,
+        "wires": [
+            [
+                "15e517c3e06af114"
+            ]
+        ]
+    },
+    {
+        "id": "5650a68fb5bd0b2a",
+        "type": "ui_text",
+        "z": "b823e2ccd523cbc2",
+        "group": "3fc1e9f631dbc648",
+        "order": 1,
+        "width": 9,
+        "height": 1,
+        "name": "Email",
+        "label": "Email:",
+        "format": "{{msg.email}}",
+        "layout": "row-spread",
+        "x": 910,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3e446118833ac46c",
+        "type": "link in",
+        "z": "b823e2ccd523cbc2",
+        "name": "To Table 'Account_information'",
+        "links": [
+            "613aaf804d8b4ad6"
+        ],
+        "x": 115,
+        "y": 80,
+        "wires": [
+            [
+                "5650a68fb5bd0b2a",
+                "14867d4114bd5f82"
+            ]
+        ]
+    },
+    {
+        "id": "83c4c3d4ef93cbe4",
+        "type": "ui_text",
+        "z": "b823e2ccd523cbc2",
+        "group": "3fc1e9f631dbc648",
+        "order": 3,
+        "width": 9,
+        "height": 1,
+        "name": "Total device",
+        "label": "Total device:",
+        "format": "{{msg.payload[0].count}}",
+        "layout": "row-spread",
+        "x": 930,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1658757671ec9622",
+        "type": "postgresql",
+        "z": "b823e2ccd523cbc2",
+        "name": "Select data Device_add",
+        "query": "SELECT COUNT(*) FROM device_active\nWHERE account_id = {{{msg.account_id}}};",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "83c4c3d4ef93cbe4",
+                "f4a730915b87c0e1"
+            ]
+        ]
+    },
+    {
+        "id": "6b48fa950c8d092d",
+        "type": "ui_button",
+        "z": "b823e2ccd523cbc2",
+        "name": "Button to table Device_add",
+        "group": "3fc1e9f631dbc648",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Add Device",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "91b15c0596b47be2"
+            ]
+        ]
+    },
+    {
+        "id": "91b15c0596b47be2",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Comand to move to table Device_add ",
+        "func": "msg.payload = {\"group\": {\"hide\": [\"Account_Information\"], \"show\": [\"Account_AddDevice\"], \"focus\": true}}\nreturn msg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "71edd8596c4edb3a"
+            ]
+        ]
+    },
+    {
+        "id": "71edd8596c4edb3a",
+        "type": "ui_ui_control",
+        "z": "b823e2ccd523cbc2",
+        "name": "To table Device_add",
+        "events": "change",
+        "x": 1140,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85b6ffab1868c798",
+        "type": "ui_button",
+        "z": "b823e2ccd523cbc2",
+        "name": "Back to table Account_information",
+        "group": "69951a47e82a0712",
+        "order": 2,
+        "width": 10,
+        "height": 1,
+        "passthru": false,
+        "label": "Back",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "back",
+        "topicType": "str",
+        "x": 260,
+        "y": 740,
+        "wires": [
+            [
+                "9efe99ee9862893a"
+            ]
+        ]
+    },
+    {
+        "id": "9efe99ee9862893a",
+        "type": "link out",
+        "z": "b823e2ccd523cbc2",
+        "name": "Form Button 'Back to table Account_infor'",
+        "links": [
+            "a35823a78d059cac",
+            "5a99b892b1c13805",
+            "d264b960b8ebdae0",
+            "4ce60797c2eceae2"
+        ],
+        "x": 515,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f4a730915b87c0e1",
+        "type": "ui_text",
+        "z": "b823e2ccd523cbc2",
+        "group": "3fc1e9f631dbc648",
+        "order": 5,
+        "width": 9,
+        "height": 1,
+        "name": "Number device running",
+        "label": "Number device running:",
+        "format": "{{msg.payload[0].count}}",
+        "layout": "row-spread",
+        "x": 970,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c616805cf5586f3c",
+        "type": "ui_text",
+        "z": "b823e2ccd523cbc2",
+        "group": "3fc1e9f631dbc648",
+        "order": 7,
+        "width": 9,
+        "height": 1,
+        "name": "Number device stopping",
+        "label": "Number device stopping:",
+        "format": "0",
+        "layout": "row-spread",
+        "x": 970,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7cd289b165f5319a",
+        "type": "ui_button",
+        "z": "b823e2ccd523cbc2",
+        "name": "Button to flow Chart",
+        "group": "3fc1e9f631dbc648",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Device Chart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "ebe0d8580491e50b"
+            ]
+        ]
+    },
+    {
+        "id": "ebe0d8580491e50b",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Comand to send Account_id and move to table  Device_add",
+        "func": "if(msg.topic === \"account\")\n{\n    account_id = msg.account_id\n}\nelse\n{\n    msg = {\n        payload: {tab: \"Chart\"},\n        account_id: account_id,\n        topic: \"account\"\n    }\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 360,
+        "wires": [
+            [
+                "cac1ebf119f0e725",
+                "7d6964c109fcb94f"
+            ]
+        ]
+    },
+    {
+        "id": "cac1ebf119f0e725",
+        "type": "ui_ui_control",
+        "z": "b823e2ccd523cbc2",
+        "name": "To flow Chart",
+        "events": "change",
+        "x": 1110,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14867d4114bd5f82",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Go to table Account_information",
+        "func": "if(msg.topic === \"account\")\n    account_id = msg.account_id\nmsg.account_id = account_id\nmsg.payload = \n{\n    \"group\": {\"hide\": [\"Account_AddDevice\", \"Account_CreateRoomName\"], \"show\": [\"Account_Information\"], \"focus\": true}\n}\nreturn msg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "0b117279da5f2559",
+                "1658757671ec9622"
+            ]
+        ]
+    },
+    {
+        "id": "0b117279da5f2559",
+        "type": "ui_ui_control",
+        "z": "b823e2ccd523cbc2",
+        "name": "Show table Account_information",
+        "events": "change",
+        "x": 630,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a35823a78d059cac",
+        "type": "link in",
+        "z": "b823e2ccd523cbc2",
+        "name": "To Table 'Account_information'",
+        "links": [
+            "9efe99ee9862893a"
+        ],
+        "x": 115,
+        "y": 160,
+        "wires": [
+            [
+                "14867d4114bd5f82"
+            ]
+        ]
+    },
+    {
+        "id": "34cce00aead7cbc9",
+        "type": "function",
+        "z": "5bda170c53f90053",
+        "name": "Config options  Select Talbe",
+        "func": "msg.options = msg.payload.map(data => {\n    return {[data.title] : data.device_id};\n})\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "af093769fcf4e1bd"
+            ]
+        ]
+    },
+    {
+        "id": "8cf51aaed717f319",
+        "type": "postgresql",
+        "z": "5bda170c53f90053",
+        "name": "Select device list of account_id",
+        "query": "SELECT device_id, title FROM device_active\nWHERE account_id = {{{msg.account_id}}}\nORDER BY device_id;",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": "1",
+        "outputs": 1,
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "34cce00aead7cbc9"
+            ]
+        ]
+    },
+    {
+        "id": "b9bdba018c447407",
+        "type": "function",
+        "z": "5bda170c53f90053",
+        "name": "Map data Device to Gauge",
+        "func": "if(msg.topic === 'null')\n{\n    temp = {payload: 0}\n    humidity = {payload: 0}\n    VOC = {payload: 0}\n    CO2 = {payload: 0}\n    PM10 = {payload: 0}\n    PM25 = {payload: 0}\n    return [temp, humidity, VOC, CO2, PM10, PM25]\n}\nelse if(msg.topic === 'dataFirst')\n{\n    temp = {payload: msg.payload[0].temp}\n    humidity = {payload: msg.payload[0].humidity}\n    VOC = {payload: msg.payload[0].voc}\n    CO2 = {payload: msg.payload[0].co2}\n    PM10 = {payload: msg.payload[0].pm10}\n    PM25 = {payload: msg.payload[0].pm25}\n    return [temp, humidity, VOC, CO2, PM10, PM25]\n}\nelse\n{\n    temp = {payload: msg.payload.temp}\n    humidity = {payload: msg.payload.humidity}\n    VOC = {payload: msg.payload.VOC}\n    CO2 = {payload: msg.payload.CO2}\n    PM10 = {payload: msg.payload.PM10}\n    PM25 = {payload: msg.payload.PM25}\n    return [temp, humidity, VOC, CO2, PM10, PM25]\n}\n",
+        "outputs": 6,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 880,
+        "wires": [
+            [
+                "6a2636c25945fdc9"
+            ],
+            [
+                "f0b3a03bf8473ca3"
+            ],
+            [
+                "92cbf0e4ea70ac14"
+            ],
+            [
+                "6d47b24fdb52fb1b"
+            ],
+            [
+                "20fec89e7f831b88"
+            ],
+            [
+                "f164a9fe60bfa7ce"
+            ]
+        ]
+    },
+    {
+        "id": "1efe67d1f5129df4",
+        "type": "function",
+        "z": "5bda170c53f90053",
+        "name": "Map data Device to Chart",
+        "func": "if (msg.topic === \"null\" || (typeof msg.payload !== 'string' && msg.payload.length === 0))\n{\n    msg.payload = []\n    return  [msg,msg,msg,msg,msg,msg]\n}\nelse if(typeof msg.payload !== 'string')\n{\n    temp ={\n        payload:[{\n                series: ['°C','Alarm'],\n                data: [\n                    msg.payload.map(data => {\n                        return {\n                            x: data.datetime.getTime(),\n                            y: data.temp\n                        }\n                    }),\n                    msg.payload.map(data => {\n                        return {\n                            x: data.datetime.getTime(),\n                            y: 50\n                        }\n                    })\n                ],\n                labels: [\"\"]\n                }]\n    }\n    humidity ={\n        payload:[{\n                \"series\": [\"%\"],\n                \"data\": [\n                    msg.payload.map(data => {\n                        return {\n                            \"x\": data.datetime.toISOString(),\n                            \"y\": data.humidity\n                        }\n                    })\n                ],\n                \"labels\": [\"\"]\n                }]\n    }\n    voc ={\n        payload:[{\n                \"series\": [\"ppb\"],\n                \"data\": [\n                    msg.payload.map(data => {\n                        return {\n                            \"x\": data.datetime.toISOString(),\n                            \"y\": data.voc\n                        }\n                    })\n                ],\n                \"labels\": [\"\"]\n                }]\n    }\n    co2 ={\n        payload:[{\n                \"series\": [\"ppm\"],\n                \"data\": [\n                    msg.payload.map(data => {\n                        return {\n                            \"x\": data.datetime.toISOString(),\n                            \"y\": data.co2\n                        }\n                    })\n                ],\n                \"labels\": [\"\"]\n                }]\n    }\n    pm10 ={\n        payload:[{\n                \"series\": [\"ppm\"],\n                \"data\": [\n                    msg.payload.map(data => {\n                        return {\n                            \"x\": data.datetime.toISOString(),\n                            \"y\": data.pm10\n                        }\n                    })\n                ],\n                \"labels\": [\"\"]\n                }]\n    }\n    pm25 ={\n        payload:[{\n                \"series\": [\"ppm\"],\n                \"data\": [\n                    msg.payload.map(data => {\n                        return {\n                            \"x\": data.datetime.toISOString(),\n                            \"y\": data.pm25\n                        }\n                    })\n                ],\n                \"labels\": [\"\"]\n                }]\n    }\n    return [temp, humidity, voc, co2, pm10, pm25 ];\n}",
+        "outputs": 6,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1560,
+        "wires": [
+            [
+                "0d038adfd67c54f1"
+            ],
+            [
+                "d3fba04bf4cde112"
+            ],
+            [
+                "c1eb497609b3c107"
+            ],
+            [
+                "139035736459bdff"
+            ],
+            [
+                "36035c240f1c1be8"
+            ],
+            [
+                "1a9860fac08521a3"
+            ]
+        ]
+    },
+    {
+        "id": "28fc9f3d245d79ed",
+        "type": "postgresql",
+        "z": "5bda170c53f90053",
+        "name": "Select data Air_quality",
+        "query": "SELECT temp, humidity, voc, co2, pm10, pm25, datetime FROM air_quality\nWHERE device_id = {{{msg.device_id}}}\nAND datetime >= '{{{msg.startTime}}}'\nAND datetime <= '{{{msg.endTime}}}'\nORDER BY datetime",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 420,
+        "y": 1580,
+        "wires": [
+            [
+                "1efe67d1f5129df4"
+            ]
+        ]
+    },
+    {
+        "id": "a986ee586437f3f7",
+        "type": "link in",
+        "z": "b823e2ccd523cbc2",
+        "name": "To Button 'To flow Chart'",
+        "links": [
+            "613aaf804d8b4ad6"
+        ],
+        "x": 395,
+        "y": 400,
+        "wires": [
+            [
+                "ebe0d8580491e50b"
+            ]
+        ]
+    },
+    {
+        "id": "7d6964c109fcb94f",
+        "type": "link out",
+        "z": "b823e2ccd523cbc2",
+        "name": "From Flow 'Account' , Button 'To flow Chart'",
+        "links": [
+            "f14428b6d172f66a",
+            "7d89efa6c2702e0b"
+        ],
+        "x": 1055,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1ae689fe62550ea3",
+        "type": "ui_slider",
+        "z": "5bda170c53f90053",
+        "name": "slider",
+        "label": "hours ago",
+        "tooltip": "",
+        "group": "d256e72fba7df8c2",
+        "order": 22,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "slider",
+        "topicType": "str",
+        "min": "1",
+        "max": "10",
+        "step": 1,
+        "x": 870,
+        "y": 380,
+        "wires": [
+            [
+                "fc6d1c92190b6025"
+            ]
+        ]
+    },
+    {
+        "id": "0d038adfd67c54f1",
+        "type": "ui_chart",
+        "z": "5bda170c53f90053",
+        "name": "Temperature",
+        "group": "d256e72fba7df8c2",
+        "order": 24,
+        "width": 12,
+        "height": 4,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#d87474",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#b42744",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 950,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3fba04bf4cde112",
+        "type": "ui_chart",
+        "z": "5bda170c53f90053",
+        "name": "Humdity",
+        "group": "d256e72fba7df8c2",
+        "order": 25,
+        "width": 12,
+        "height": 4,
+        "label": "Humdity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#d87474",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 940,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1eb497609b3c107",
+        "type": "ui_chart",
+        "z": "5bda170c53f90053",
+        "name": "TVOC",
+        "group": "d256e72fba7df8c2",
+        "order": 26,
+        "width": 12,
+        "height": 4,
+        "label": "TVOC",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2500",
+        "removeOlder": "1",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#d87474",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 930,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "139035736459bdff",
+        "type": "ui_chart",
+        "z": "5bda170c53f90053",
+        "name": "CO2",
+        "group": "d256e72fba7df8c2",
+        "order": 27,
+        "width": 12,
+        "height": 4,
+        "label": "CO2",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "5000",
+        "removeOlder": "1",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#d87474",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 930,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36035c240f1c1be8",
+        "type": "ui_chart",
+        "z": "5bda170c53f90053",
+        "name": "PM10",
+        "group": "d256e72fba7df8c2",
+        "order": 28,
+        "width": 12,
+        "height": 4,
+        "label": "PM10",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "700",
+        "removeOlder": "1",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#d87474",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 930,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a9860fac08521a3",
+        "type": "ui_chart",
+        "z": "5bda170c53f90053",
+        "name": "PM2.5",
+        "group": "d256e72fba7df8c2",
+        "order": 29,
+        "width": 12,
+        "height": 4,
+        "label": "PM2.5",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "300",
+        "removeOlder": "1",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#d87474",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 930,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "156b8c2521eeb66e",
+        "type": "postgresql",
+        "z": "5bda170c53f90053",
+        "name": "Select last data Air_quality",
+        "query": "SELECT id, device_id, temp, humidity, voc, co2, pm10, pm25 \nFROM air_quality\nWHERE device_id = {{{msg.device_id}}}\nORDER BY id DESC \nLIMIT 1;",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 380,
+        "y": 880,
+        "wires": [
+            [
+                "b9bdba018c447407"
+            ]
+        ]
+    },
+    {
+        "id": "fc6d1c92190b6025",
+        "type": "function",
+        "z": "5bda170c53f90053",
+        "name": "Map status Select",
+        "func": "if(msg.topic === \"account\")\n{\n    account_id = msg.account_id\n    device_id = undefined\n    chart1 = {topic: \"null\"}\n    gauge1 = {topic: \"null\"}\n    return [chart1, null, gauge1, null]\n}\nelse if(msg.topic ==='device_id')\n{\n    device_id = msg.payload\n    if(typeof slider === \"undefined\")\n        slider = 1\n    Time = new Date().setHours(new Date().getHours() - slider)\n    chart2 = {topic: \"\", startTime: new Date(Time).toISOString(), endTime: new Date().toISOString(), device_id: device_id, account_id: account_id}\n    gauge2 = {topic: \"dataFirst\", device_id: device_id, account_id: account_id}\n    return [null, chart2, null, gauge2]\n}\nelse if(typeof device_id !== 'undefined' && msg.topic === \"mqtt\" && device_id === msg.payload.id) \n{\n    chart2 = {topic: \"\",startTime: new Date(Time).toISOString(), endTime: new Date().toISOString(), device_id: device_id}\n    gauge1 = {topic: \"\",payload: msg.payload}\n    return [null, chart2, gauge1, null]\n}\nelse if(typeof device_id !== 'undefined' && msg.topic === \"slider\")\n{\n    slider = msg.payload\n    Time = new Date().setHours(new Date().getHours() - slider)\n    chart2 = {topic: \"\", startTime: new Date(Time).toISOString(), endTime: new Date().toISOString(), device_id: device_id}\n    return [null, chart2, null, null]\n}",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 300,
+        "wires": [
+            [
+                "ea8485bd78f57013"
+            ],
+            [
+                "b80091fb7a9d33a7"
+            ],
+            [
+                "be8cea4187e523c7"
+            ],
+            [
+                "b4992b87b8313284"
+            ]
+        ]
+    },
+    {
+        "id": "4743717b4da42274",
+        "type": "ui_button",
+        "z": "5bda170c53f90053",
+        "name": "",
+        "group": "d256e72fba7df8c2",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Back to Account",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 620,
+        "wires": [
+            [
+                "fd70099477b176a0"
+            ]
+        ]
+    },
+    {
+        "id": "fd70099477b176a0",
+        "type": "function",
+        "z": "5bda170c53f90053",
+        "name": "Sent request Back to Flow Account",
+        "func": "msg.payload = {tab: \"Account\"}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 620,
+        "wires": [
+            [
+                "a372106780e8fe38"
+            ]
+        ]
+    },
+    {
+        "id": "a372106780e8fe38",
+        "type": "ui_ui_control",
+        "z": "5bda170c53f90053",
+        "name": "To flow Account",
+        "events": "change",
+        "x": 820,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d1d852571d36298",
+        "type": "ui_button",
+        "z": "b823e2ccd523cbc2",
+        "name": "",
+        "group": "3fc1e9f631dbc648",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Log Out",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            [
+                "d2b87eefdeb83394"
+            ]
+        ]
+    },
+    {
+        "id": "d2b87eefdeb83394",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Comand to back to flow Home",
+        "func": "msg.payload = {tab: \"Home\"}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 460,
+        "wires": [
+            [
+                "4be974939bcf8f35"
+            ]
+        ]
+    },
+    {
+        "id": "4be974939bcf8f35",
+        "type": "ui_ui_control",
+        "z": "b823e2ccd523cbc2",
+        "name": "To flow Home",
+        "events": "change",
+        "x": 1120,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f634aabb4c0598c",
+        "type": "ui_ui_control",
+        "z": "76b0044be5cec7fe",
+        "name": "Check status tab",
+        "events": "all",
+        "x": 890,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27567c1f4f08312a",
+        "type": "function",
+        "z": "76b0044be5cec7fe",
+        "name": "Go to table Account_information",
+        "func": "if(msg.payload === \"change\" && msg.name === \"Home\")\n{\n    msg.payload =\n    {\n        tabs: \n        {\n            show: \"Home\",\n            hide: [\"Account\", \"Chart\"],\n        }\n    }\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 20,
+        "wires": [
+            [
+                "0f634aabb4c0598c"
+            ]
+        ]
+    },
+    {
+        "id": "3c522e8571881657",
+        "type": "ui_ui_control",
+        "z": "76b0044be5cec7fe",
+        "name": "Check status tab Home",
+        "events": "change",
+        "x": 210,
+        "y": 20,
+        "wires": [
+            [
+                "27567c1f4f08312a"
+            ]
+        ]
+    },
+    {
+        "id": "a347cc5fc2635544",
+        "type": "ui_ui_control",
+        "z": "b823e2ccd523cbc2",
+        "name": "Check status tab Home",
+        "events": "all",
+        "x": 210,
+        "y": 40,
+        "wires": [
+            [
+                "f9b9557853bdf628"
+            ]
+        ]
+    },
+    {
+        "id": "f9b9557853bdf628",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Go to table Account_information",
+        "func": "if(msg.payload === \"change\" && msg.name === \"Account\")\n{\n    msg.payload =\n    {\n        tabs: {show: [\"Account\", \"Chart\"]},\n    }\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 40,
+        "wires": [
+            [
+                "d0d051b16c5b3ff8"
+            ]
+        ]
+    },
+    {
+        "id": "d0d051b16c5b3ff8",
+        "type": "ui_ui_control",
+        "z": "b823e2ccd523cbc2",
+        "name": "Check status tab",
+        "events": "all",
+        "x": 950,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f14428b6d172f66a",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "To Flow 'Chart', Table 'Select Device'",
+        "links": [
+            "7d6964c109fcb94f"
+        ],
+        "x": 835,
+        "y": 240,
+        "wires": [
+            [
+                "fc6d1c92190b6025"
+            ]
+        ]
+    },
+    {
+        "id": "50d69e421e5ebf2f",
+        "type": "delay",
+        "z": "5bda170c53f90053",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 190,
+        "y": 1580,
+        "wires": [
+            [
+                "28fc9f3d245d79ed"
+            ]
+        ]
+    },
+    {
+        "id": "6a2636c25945fdc9",
+        "type": "ui_artlessgauge",
+        "z": "5bda170c53f90053",
+        "group": "d256e72fba7df8c2",
+        "order": 5,
+        "width": 4,
+        "height": 4,
+        "name": "Temperature",
+        "icon": "fa-thermometer-empty",
+        "label": "Temperature",
+        "unit": "°C",
+        "layout": "radial",
+        "decimals": 0,
+        "differential": false,
+        "minmax": false,
+        "colorTrack": "#10caf9",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff0000",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 18,
+                "col": "#ffff00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 24,
+                "col": "#00e400",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 37,
+                "col": "#ffff38",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 42,
+                "col": "#ff0000",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 100,
+                "col": "#ff0000",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": false,
+        "diffCenter": "",
+        "x": 950,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "f0b3a03bf8473ca3",
+        "type": "ui_artlessgauge",
+        "z": "5bda170c53f90053",
+        "group": "d256e72fba7df8c2",
+        "order": 6,
+        "width": 4,
+        "height": 4,
+        "name": "Humdity",
+        "icon": "fa-tint ",
+        "label": "Humidity",
+        "unit": "%",
+        "layout": "radial",
+        "decimals": 0,
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#10caf9",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff0000",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 25,
+                "col": "#ffff00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 30,
+                "col": "#00e400",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 60,
+                "col": "#ffff00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 70,
+                "col": "#ff0000",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 100,
+                "col": "#ff0000",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": false,
+        "diffCenter": "",
+        "x": 940,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "92cbf0e4ea70ac14",
+        "type": "ui_artlessgauge",
+        "z": "5bda170c53f90053",
+        "group": "d256e72fba7df8c2",
+        "order": 7,
+        "width": 4,
+        "height": 4,
+        "name": "TVOC",
+        "icon": "wi-darksky-wind",
+        "label": "TVOC",
+        "unit": "ppb",
+        "layout": "radial",
+        "decimals": 0,
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#10caf9",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#00e400",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 250,
+                "col": "#ffff00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 2000,
+                "col": "#ff0000",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 2500,
+                "col": "#ff0000",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": false,
+        "diffCenter": "",
+        "x": 930,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "6d47b24fdb52fb1b",
+        "type": "ui_artlessgauge",
+        "z": "5bda170c53f90053",
+        "group": "d256e72fba7df8c2",
+        "order": 8,
+        "width": 4,
+        "height": 4,
+        "name": "CO2",
+        "icon": "wi-darksky-cloudy",
+        "label": "CO2",
+        "unit": "ppm",
+        "layout": "radial",
+        "decimals": 0,
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#10caf9",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#00e400",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 400,
+                "col": "#ffff00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 1000,
+                "col": "#ff7e00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 2000,
+                "col": "#ff0000",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 5000,
+                "col": "#ff0000",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": false,
+        "diffCenter": "",
+        "x": 930,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "20fec89e7f831b88",
+        "type": "ui_artlessgauge",
+        "z": "5bda170c53f90053",
+        "group": "d256e72fba7df8c2",
+        "order": 9,
+        "width": 4,
+        "height": 4,
+        "name": "PM10",
+        "icon": "wi-darksky-tornado",
+        "label": "PM10",
+        "unit": "ppm",
+        "layout": "radial",
+        "decimals": 0,
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#10caf9",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#00e400",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 150,
+                "col": "#ffff00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 250,
+                "col": "#ff7e00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 350,
+                "col": "#ff0000",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 420,
+                "col": "#8f3f97",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 600,
+                "col": "#7e0023",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 700,
+                "col": "#7e0023",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": false,
+        "diffCenter": "",
+        "x": 930,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "f164a9fe60bfa7ce",
+        "type": "ui_artlessgauge",
+        "z": "5bda170c53f90053",
+        "group": "d256e72fba7df8c2",
+        "order": 10,
+        "width": 4,
+        "height": 4,
+        "name": "PM2.5",
+        "icon": "wi-darksky-tornado",
+        "label": "PM2.5",
+        "unit": "ppm",
+        "layout": "radial",
+        "decimals": 0,
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#10caf9",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#00e400",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 25,
+                "col": "#ffff00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 50,
+                "col": "#ff7e00",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 80,
+                "col": "#ff0000",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 150,
+                "col": "#8f3f97",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 250,
+                "col": "#7e0023",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 300,
+                "col": "#7e0023",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": false,
+        "diffCenter": "",
+        "x": 930,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "f182beebe028280c",
+        "type": "link in",
+        "z": "b823e2ccd523cbc2",
+        "name": "To Table 'Device_add'",
+        "links": [
+            "613aaf804d8b4ad6"
+        ],
+        "x": 555,
+        "y": 560,
+        "wires": [
+            [
+                "57a10af08d2ce269"
+            ]
+        ]
+    },
+    {
+        "id": "57a10af08d2ce269",
+        "type": "function",
+        "z": "b823e2ccd523cbc2",
+        "name": "Check status Device_add",
+        "func": "if(msg.topic === \"account\")\n{\n    account_id = msg.account_id\n}\nelse if(msg.payload.length === 0)\n{\n    text = {payload: \"This device does not exist.\\nPlease check the information again !!!\"}\n    return [text, null]\n}\nelse \n{\n    msg.account_id = account_id\n    msg.device_id = msg.payload[0].device_id\n    msg.topic = \"AddDevice\"\n    return [null, msg]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 620,
+        "wires": [
+            [
+                "8b18ca413f45dbf3"
+            ],
+            [
+                "92911444077c49d7"
+            ]
+        ]
+    },
+    {
+        "id": "92911444077c49d7",
+        "type": "postgresql",
+        "z": "b823e2ccd523cbc2",
+        "name": "Select data Device_active",
+        "query": "SELECT COUNT(*)\nFROM device_active\nWHERE device_id = {{{msg.device_id}}}\nAND account_id =  {{{msg.account_id}}};",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1010,
+        "y": 620,
+        "wires": [
+            [
+                "267ae3de04472ceb"
+            ]
+        ]
+    },
+    {
+        "id": "8b18ca413f45dbf3",
+        "type": "link out",
+        "z": "b823e2ccd523cbc2",
+        "name": "From Table 'Device_add', status",
+        "links": [
+            "5c94d79f2e1cd5e9",
+            "5a99b892b1c13805",
+            "d264b960b8ebdae0",
+            "4ce60797c2eceae2"
+        ],
+        "x": 895,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "0eb2c2e2eb13bf69",
+        "type": "function",
+        "z": "5bda170c53f90053",
+        "name": "Get data setAlarm of device_active",
+        "func": "if(msg.topic === \"dataFirst\")\n{\n    account_id = msg.account_id\n    device_id = msg.device_id\n    status = \"still\"\n}\nelse if(msg.topic === \"temp\")\n{\n    if(msg.payload < 0 || msg.payload > 100)\n        status = \"temp\"\n    else\n    {\n        if(msg.payload === null)\n            temp = 0\n        else\n            temp = msg.payload\n        status = \"change\"\n    }\n}\nelse if(msg.topic === \"humidity\" && (status === \"still\" || status === \"change\"))\n{\n    if(msg.payload < 0 || msg.payload > 100)\n        status = \"humidity\"\n    else\n    {\n        if(msg.payload === null)\n            humidity = 0\n        else\n            humidity = msg.payload\n        status = \"change\"\n    }\n}\nelse if(msg.topic === \"VOC\" && (status === \"still\" || status === \"change\"))\n{\n    if(msg.payload < 0 || msg.payload > 2500)\n        status = \"VOC\"\n    else\n    {\n        if(msg.payload === null)\n            VOC = 0\n        else\n            VOC = msg.payload\n        status = \"change\"\n    }\n}\nelse if(msg.topic === \"CO2\" && (status === \"still\" || status === \"change\"))\n{\n    if(msg.payload < 0 || msg.payload > 5000)\n        status = \"CO2\"\n    else\n    {\n        if(msg.payload === null)\n            CO2 = 0\n        else\n            CO2 = msg.payload\n        status = \"change\"\n    }\n}\nelse if(msg.topic === \"PM10\" && (status === \"still\" || status === \"change\"))\n{\n    if(msg.payload < 0 || msg.payload > 700)\n        status = \"PM10\"\n    else\n    {\n        if(msg.payload === null)\n            PM10 = 0\n        else\n            PM10 = msg.payload\n        status = \"change\"\n    }\n}\nelse if(msg.topic === \"PM25\" && (status === \"still\" || status === \"change\"))\n{\n    if(msg.payload < 0 || msg.payload > 300)\n        status = \"PM25\"\n    else\n    {\n        if(msg.payload === null)\n            PM25 = 0\n        else\n            PM25 = msg.payload\n        status = \"change\"\n    }\n    if(typeof msg.still !== \"undefined\")\n        status = \"still\"\n}\nelse if(msg.topic === \"setAlarm\")\n{\n    if(status === \"change\")\n    {\n        data = { account_id: account_id, device_id: device_id, temp: temp, humidity: humidity, VOC: VOC, CO2: CO2, PM10: PM10, PM25: PM25}\n        text = {payload: \"Alarm level setting successful !!!\"}\n        status = \"still\"\n    }\n    else if(status === \"still\")\n    {\n        data = null\n        text = {payload: \"No setting level has been changed yet !!!\"}\n    }\n    else\n    {\n        data = null\n        text = {payload: \"Alarm setting value \" + status + \" is out of allowable limit !!!\"}\n        status = \"still\"\n    }\n    return [data, text, {payload: status}];\n}\n    ",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 1180,
+        "wires": [
+            [
+                "16956324c00da4f0"
+            ],
+            [
+                "1cb8bb40762a8613"
+            ]
+        ]
+    },
+    {
+        "id": "c5f676e5ccc22419",
+        "type": "function",
+        "z": "5bda170c53f90053",
+        "name": "Map data SetAlarm",
+        "func": "if(msg.topic === 'null')\n{\n    temp = {payload: null, enabled: false}\n    humidity = {payload: null, enabled: false}\n    VOC = {payload: null, enabled: false}\n    CO2 = {payload: null, enabled: false}\n    PM10 = {payload: null, enabled: false}\n    PM25 = {payload: null, enabled: false}\n    SetAlarm = {enabled : false}\n    return [temp, humidity, VOC, CO2, PM10, PM25, SetAlarm]\n}\nelse if(msg.topic === 'dataFirst')\n{\n    temp = { payload: msg.payload[0].temp_alarm, enabled: true}\n    humidity = { payload: msg.payload[0].humidity_alarm, enabled: true}\n    VOC = { payload: msg.payload[0].voc_alarm, enabled: true}\n    CO2 = { payload: msg.payload[0].co2_alarm, enabled: true}\n    PM10 = { payload: msg.payload[0].pm10_alarm, enabled: true}\n    PM25 = { payload: msg.payload[0].pm25_alarm, still: true, enabled: true}\n    SetAlarm = {enabled : true}\n    return [temp, humidity, VOC, CO2, PM10, PM25, SetAlarm];\n}\n",
+        "outputs": 7,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1180,
+        "wires": [
+            [
+                "0ec1b8f92e5e7108"
+            ],
+            [
+                "8b7f7c4698849d60"
+            ],
+            [
+                "7ea53255d951a6a0"
+            ],
+            [
+                "2d2b6e808bc49698"
+            ],
+            [
+                "484bc0767fc839ba"
+            ],
+            [
+                "a789b08392c60a67"
+            ],
+            [
+                "18908aadfbd956e6"
+            ]
+        ]
+    },
+    {
+        "id": "f25c59143a912fd1",
+        "type": "postgresql",
+        "z": "5bda170c53f90053",
+        "name": "Select last data Setup Alarm",
+        "query": "SELECT temp_alarm, humidity_alarm, voc_alarm, co2_alarm, pm10_alarm, pm25_alarm \nFROM device_active\nWHERE account_id = {{{msg.account_id}}}\nAND device_id = {{{msg.device_id}}}\n",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 400,
+        "y": 1180,
+        "wires": [
+            [
+                "c5f676e5ccc22419"
+            ]
+        ]
+    },
+    {
+        "id": "16956324c00da4f0",
+        "type": "postgresql",
+        "z": "5bda170c53f90053",
+        "name": "Update data setup Alarm to Device_active",
+        "query": "UPDATE device_active\nSET temp_alarm = {{{ msg.temp}}}, humidity_alarm = {{{ msg.humidity}}}, voc_alarm = {{{ msg.VOC}}}, co2_alarm = {{{ msg.CO2}}}, pm10_alarm = {{{ msg.PM10}}}, pm25_alarm = {{{ msg.PM25}}} \nWHERE account_id = {{{ msg.account_id}}}\nAND device_id = {{{ msg.device_id}}};",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1560,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "153665cfbb92c422",
+        "type": "delay",
+        "z": "5bda170c53f90053",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 190,
+        "y": 1180,
+        "wires": [
+            [
+                "f25c59143a912fd1"
+            ]
+        ]
+    },
+    {
+        "id": "1cb8bb40762a8613",
+        "type": "trigger",
+        "z": "5bda170c53f90053",
+        "name": "Status display time",
+        "op1": "",
+        "op2": "  ",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5000",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1490,
+        "y": 1220,
+        "wires": [
+            [
+                "3192f7a7dc33122b"
+            ]
+        ]
+    },
+    {
+        "id": "3192f7a7dc33122b",
+        "type": "ui_text",
+        "z": "5bda170c53f90053",
+        "group": "d256e72fba7df8c2",
+        "order": 14,
+        "width": 20,
+        "height": 1,
+        "name": "Status setup  Alarm",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1690,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "c9da574f088afac4",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "To Chart2",
+        "links": [
+            "b80091fb7a9d33a7"
+        ],
+        "x": 75,
+        "y": 1580,
+        "wires": [
+            [
+                "50d69e421e5ebf2f"
+            ]
+        ]
+    },
+    {
+        "id": "ea8485bd78f57013",
+        "type": "link out",
+        "z": "5bda170c53f90053",
+        "name": "From Table 'Select_Device', Chart1",
+        "links": [
+            "5f32752d575f015a",
+            "5a99b892b1c13805",
+            "d264b960b8ebdae0",
+            "4ce60797c2eceae2"
+        ],
+        "x": 1375,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5f32752d575f015a",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "To Chart1",
+        "links": [
+            "ea8485bd78f57013"
+        ],
+        "x": 515,
+        "y": 1540,
+        "wires": [
+            [
+                "1efe67d1f5129df4"
+            ]
+        ]
+    },
+    {
+        "id": "b80091fb7a9d33a7",
+        "type": "link out",
+        "z": "5bda170c53f90053",
+        "name": "From Table 'Select_Device', Chart2",
+        "links": [
+            "c9da574f088afac4",
+            "5a99b892b1c13805",
+            "d264b960b8ebdae0",
+            "4ce60797c2eceae2"
+        ],
+        "x": 1375,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b4992b87b8313284",
+        "type": "link out",
+        "z": "5bda170c53f90053",
+        "name": "From Table 'Select_Device', Gauge2",
+        "links": [
+            "97b7868947dbb2ac",
+            "990d9335e46e7789",
+            "a2fb2d8f4827b7c4",
+            "83fac23a498a0e54"
+        ],
+        "x": 1375,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "be8cea4187e523c7",
+        "type": "link out",
+        "z": "5bda170c53f90053",
+        "name": "From Table 'Select_Device', Gauge1",
+        "links": [
+            "c533ea5e4f50e48f",
+            "a3a2be74a068a5c9",
+            "8b98c9c2aff0c39e",
+            "5a99b892b1c13805",
+            "d264b960b8ebdae0",
+            "4ce60797c2eceae2",
+            "c1598e24ec6ea45e"
+        ],
+        "x": 1375,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c533ea5e4f50e48f",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "Gauge1",
+        "links": [
+            "be8cea4187e523c7",
+            "634b1bce412de323"
+        ],
+        "x": 475,
+        "y": 840,
+        "wires": [
+            [
+                "b9bdba018c447407"
+            ]
+        ]
+    },
+    {
+        "id": "97b7868947dbb2ac",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "Gauge2",
+        "links": [
+            "b4992b87b8313284",
+            "454e06942e4bd016"
+        ],
+        "x": 75,
+        "y": 880,
+        "wires": [
+            [
+                "156b8c2521eeb66e"
+            ]
+        ]
+    },
+    {
+        "id": "990d9335e46e7789",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "Gauge2",
+        "links": [
+            "b4992b87b8313284",
+            "454e06942e4bd016"
+        ],
+        "x": 75,
+        "y": 1180,
+        "wires": [
+            [
+                "153665cfbb92c422"
+            ]
+        ]
+    },
+    {
+        "id": "a2fb2d8f4827b7c4",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "Gauge2",
+        "links": [
+            "b4992b87b8313284",
+            "454e06942e4bd016"
+        ],
+        "x": 995,
+        "y": 1040,
+        "wires": [
+            [
+                "0eb2c2e2eb13bf69"
+            ]
+        ]
+    },
+    {
+        "id": "a3a2be74a068a5c9",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "Gauge1",
+        "links": [
+            "be8cea4187e523c7",
+            "634b1bce412de323"
+        ],
+        "x": 495,
+        "y": 1140,
+        "wires": [
+            [
+                "c5f676e5ccc22419"
+            ]
+        ]
+    },
+    {
+        "id": "97ea146bbfec5772",
+        "type": "function",
+        "z": "5bda170c53f90053",
+        "name": "Config status Slider",
+        "func": "if(msg.topic === \"null\")\n{\n    msg.payload = 10\n    msg.enabled = false\n}\nelse\nif(msg.topic === \"dataFirst\")\n{\n    msg.payload = 1\n    msg.enabled = true\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "1ae689fe62550ea3"
+            ]
+        ]
+    },
+    {
+        "id": "c1598e24ec6ea45e",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "Gauge1",
+        "links": [
+            "be8cea4187e523c7",
+            "634b1bce412de323"
+        ],
+        "x": 435,
+        "y": 380,
+        "wires": [
+            [
+                "97ea146bbfec5772"
+            ]
+        ]
+    },
+    {
+        "id": "83fac23a498a0e54",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "Gauge2",
+        "links": [
+            "b4992b87b8313284",
+            "454e06942e4bd016"
+        ],
+        "x": 435,
+        "y": 440,
+        "wires": [
+            [
+                "97ea146bbfec5772"
+            ]
+        ]
+    },
+    {
+        "id": "7d89efa6c2702e0b",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "To Flow 'Chart', Table 'Select Device'",
+        "links": [
+            "7d6964c109fcb94f"
+        ],
+        "x": 75,
+        "y": 300,
+        "wires": [
+            [
+                "8cf51aaed717f319"
+            ]
+        ]
+    },
+    {
+        "id": "24a1e9304d592b5b",
+        "type": "mqtt in",
+        "z": "76f786813df1af69",
+        "name": "ESP3288 to MQTT",
+        "topic": "demo",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "6347011a0b072a1c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "0a2cabbd63b9f4ea"
+            ]
+        ]
+    },
+    {
+        "id": "0a2cabbd63b9f4ea",
+        "type": "function",
+        "z": "76f786813df1af69",
+        "name": "Convert json string to object",
+        "func": "msg.payload =  JSON.parse(msg.payload)\nmsg.payload.datetime = new Date().toISOString()\nmsg.topic = 'mqtt'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 140,
+        "wires": [
+            [
+                "813407f0b6835b08",
+                "60d4647afc067133"
+            ]
+        ]
+    },
+    {
+        "id": "813407f0b6835b08",
+        "type": "postgresql",
+        "z": "76f786813df1af69",
+        "name": "insert to database",
+        "query": "INSERT INTO air_quality (device_id, temp, humidity, voc, co2, pm10, pm25, datetime)\n    VALUES ({{{ msg.payload.id }}}, {{{ msg.payload.temp }}}, {{{ msg.payload.humidity }}}, {{{ msg.payload.VOC }}}, {{{ msg.payload.CO2 }}}, {{{ msg.payload.PM10 }}}, {{{ msg.payload.PM25 }}}, '{{{ msg.payload.datetime }}}');",
+        "postgreSQLConfig": "abe382d43e0543cf",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 930,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60d4647afc067133",
+        "type": "link out",
+        "z": "76f786813df1af69",
+        "name": "To Flow 'RealTime', dataDevice",
+        "links": [],
+        "x": 855,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e37e3dfed6ce1a21",
+        "type": "link in",
+        "z": "5bda170c53f90053",
+        "name": "From Flow 'Chart', Table 'Select Device'",
+        "links": [],
+        "x": 835,
+        "y": 460,
+        "wires": [
+            [
+                "fc6d1c92190b6025"
+            ]
+        ]
+    }
+]
